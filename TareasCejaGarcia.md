@@ -1,3 +1,29 @@
+# Todas las tareas de Prolog por Ceja Garcia Dante Dali
+### Tareas en el documento:
+
+1. Sumar ingresando numeros
+1. Areas
+1. Descabechamiento
+
+# Tareas ->
+
+## Sumar dos numeros
+Primer tarea donde aprendimos a pedir numeros por teclado para posteriormente sumarlos
+```
+(defun sumarnumero()
+(princ "dame un numero ")
+(setq num1(read))
+(princ "dame un segundo numero ")
+(setq num2(read))
+(setq res (+ num1 num2))
+;(write res)
+)
+```
+
+
+## Areas
+Tarea donde sacamos 10 areas y 10 volumenos piediendo todo lo necesario por teclado
+```
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;areas
 (defun cuadro()
 (princ "dame un numero ")
@@ -138,3 +164,37 @@
 (princ "dame un numero ")
 (setq y(read))
 (setq res (* x y)))
+```
+
+## Descabechamiento
+Tarea donde recorremos e imprimimos una lista mientras no sea nula asi como darle formato y otra funcion donde verificamos que un numero ingresado exista en la lista
+```
+    (defun recorre (lista)
+    (princ(car lista))
+    (princ " ")
+    (if (not (null lista))
+        (recorre (cdr lista))
+    )
+    )
+
+    (defun recorre2 (lista)
+    (format t "~A-> ~%" (car lista)
+    (if lista 
+        (recorre2 (cdr lista))
+    )
+    )    
+    )
+
+    (defun recorre3 (lista)
+    (princ(car lista))
+    (princ " ")
+    (if (not (null lista)) 
+        (recorre (cdr lista))
+    )
+    (format t "~%")
+    (princ "dame un numero a buscar ")
+    (setq x(read))
+    (if ( member x lista) (princ "Si esta el numero")
+    (princ "no existe el numero"))
+    )
+```
