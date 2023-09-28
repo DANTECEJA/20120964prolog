@@ -1,11 +1,11 @@
 # Todas las tareas de Prolog por Ceja Garcia Dante Dali
 ### Tareas en el documento:
 
-1. Sumar ingresando numeros
-1. Areas
-1. Descabechamiento
-1. 5 Ejercicios
-1. Areas con lambda
+1. [Sumar ingresando numeros](#sumar-dos-numeros)
+2. [Areas](#areas)
+3. [Descabechamiento](#descabechamiento)
+4. [5 Ejercicios](#5-ejercicios)
+5. [Areas con lambda](#areas-con-lambda)
 
 # Tareas ->
 
